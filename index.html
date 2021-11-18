@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        
+        <title>SS</title>
+    </head>
+    <body>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <div class="cart-content">
+                    <ul id="oc">
+                        <li class="empty" id="mt">There is no item in the cart right now.</li>
+                    </ul>
+                    <div class="center-btn"><button class="closecart" onclick="closeNav()">Close</button></div>
+                </div>
+            </div>
+          </div>
+
+        <div class="nav-bar">
+            <div style="flex-grow: 5;">
+                <img src="ss3.png" id="logo" >
+            </div>
+            <div style="padding-right: 2vw;"><img src="cart.png" class="cart" onclick="openNav()">
+            </div>
+            <div class="drpdown">
+                <button>Categories</button>
+                    <div class="drpdown-content">
+                        <a href="alpha.html" target="_blank">Alpha</a>
+                        <a href="beta.html" target="_blank">Beta</a>
+                        <a href="sigma.html" target="_blank">Sigma</a>
+                    </div>
+            </div>
+            <div style="padding-right: 2vw;"><a href="about.html" target="_blank" style="text-decoration: none; color: #000;">About</a></div>
+        </div>
+        <div class="products">
+            <div class="card">
+                <img src="shoe1.jpg" alt="Alpha" style="width:100%;height: 185px;">
+                <hr>
+                <h1>Alpha</h1>
+                <p class="price">$100,000</p>
+                <p>Shoes made for gods..<br>--Poseidon Version--</p>
+                <p><button id="add-cart" value="1" onclick="addingtoCart(this)">Add to Cart</button></p>
+            </div>
+            <div class="card">
+                <img src="shoe2.jpg" alt="Sigma" style="width:100%;">
+                <hr>
+                <h1>Sigma</h1>
+                <p class="price">$45,000</p>
+                <p>Rich shoes for the super Rich.</p>
+                <p><button id="add-cart" value="2" onclick="addingtoCart(this)">Add to Cart</button></p>
+            </div>
+            <div class="card">
+                <img src="shoe3.jpg" alt="Beta" style="width:100%;">
+                <hr>
+                <h1>Beta</h1>
+                <p class="price">$4,999</p>
+                <p>Shoes for normal people.</p>
+                <p><button id="add-cart" value="3" onclick="addingtoCart(this)">Add to Cart</button></p>
+            </div>
+        </div>
+
+        <script src="stuff.js"></script>
+    </body>
+</html>
